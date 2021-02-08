@@ -1,0 +1,755 @@
+@import "https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap";
+*{
+    border: 0;
+    margin: 0;
+    padding: 0;
+}
+body{
+    background: #fff;
+    font-family: 'montserrat';
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+
+}
+header{
+    position: relative;
+    width: 100%;
+    height: 75px;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+.logo{
+    position: absolute;
+    cursor:pointer;
+    left: 131px;
+    right: 46.65%;
+    top: 12px;
+    bottom: 10px;
+}
+li, a{
+    font-family: Montserrat;
+    font-size: 15px;
+    line-height: 13.6px;
+    text-decoration: none;
+    color: #131513;
+    text-transform: uppercase;
+    top: 31px;
+    font-weight: 700;
+    bottom:30px;
+    box-sizing: border-box;
+}
+.nav_links{
+    position: absolute;
+    left: 713px;
+}
+.nav_links{
+    list-style: none;
+    display: grid;
+    grid-template-columns: repeat(3, 128px);
+    gap: 39px;
+    top: 26px;
+    align-items: center;
+
+}
+.nav_links li{
+    display: inline-block;
+}
+.nav_links img{
+    padding-right: 16px;
+    top: 10px;
+    
+}
+.search-box{
+    position: absolute;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    left: 320px;
+    width: 314px;
+    height: 29px;
+    top: 23px;
+    
+} 
+.search-box input{
+    width: 270px;
+    border: solid 1px #00C800;
+    padding: 0px 10px;
+    border-radius: 25px 0 0 25px;
+    outline: none;
+
+}
+.search-box button{
+    width: 44px;
+    height: 29px;
+    background: #00C800;
+    border-radius: 0 25px 25px 0;
+    cursor: pointer;
+    outline: none;
+}
+.search-box button:hover{
+    background: #004200;
+
+}
+.search-box button img{
+    margin:0 auto;
+    
+}
+.menu{
+    position: absolute;
+    left:1285.33px;
+    top: 28px
+}
+.element-search{
+    position: relative;
+    background-color: #F2F2F2;
+    width: 100%;
+    height: 32px;;
+    top: 0px;
+}
+.element-search ul li{
+    position: absolute;
+    left: 131px;
+    top:8.21%;
+    list-style: none;
+    display: inline-block;
+}
+.element-search .indicador{
+    left: 106px;
+    position: absolute;
+    align-items: center;
+    top: 8px;
+}
+.element-search .passeio{
+    font-size: 8px;
+    margin-left: 44px;
+    position: absolute;
+    top: 8px;
+}
+main{
+    position: relative;
+    max-width: 1160px;
+    margin: 0 auto;
+    margin-bottom:33px;
+}
+main .container{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+/* Marca do Pneu */
+.banner-details .nome-marca{
+    
+    margin-top:27px;
+    width: 210px;
+    height: 22.41px;
+    display: flex;
+}
+
+.image-product .badge{
+    position: absolute;
+    left: 326px;
+    top: 450px;
+}
+.nome-pneu{
+    font-family: "Montserrat";
+    font-style: normal;
+}
+/* Valor do Pneu */
+
+.preco-pneu{
+    position: relative;
+    margin-top:20px;
+}
+.preco-pneu .text{
+    margin-bottom: -3%;
+    font-size: 12px;
+    font-style: normal;
+}
+
+.dropdown-option{
+    display: grid;
+    grid-template-columns: 69px 1fr 1fr;
+    align-items: center;
+    grid-gap:20px;
+    
+}
+.option{
+    position: relative;
+}
+.dropdown-option .option select{
+    background: #F2F2F2;
+    border-radius: 20px;
+    height: 36px;
+    width: 69px;
+    padding: 10px;
+    appearance: none;
+    outline: none;
+
+}
+.dropdown-option .option img{
+    position: absolute;
+    left: 50px;
+    top: 15px;
+
+}
+.valor-pneu h2{
+    font-family: 'Montserrat';
+    font-size: 66px;
+}
+.form-pag p{
+    color: #00C800;
+    font-family: 'Montserrat';
+    font-size: 12px;
+    font-weight: 700;
+}
+/* Parcelamento */
+.parcelamento{
+    position: relative;
+}
+.parcelamento .qnt-parcela p{
+    font-size: 12px;
+    margin-left: 132px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    width: 94px;
+}
+.select-box-parcela select{
+    border-radius: 20px;
+    box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.1);
+    width: 265px;
+    height: 38px;
+    left: 0px;
+    font-size: 16px;
+    padding: 11.5px;
+    appearance: none;
+    outline: none;
+
+}
+.select-box-parcela select option{
+    font-size: 16px;
+    padding: 11.5px;
+}
+.select-box-parcela img{
+    position: absolute;
+    margin-top: 20px;
+    margin-left: -20px;
+}
+.taxa-juros{
+    width: 350px;
+    height: 30px;
+    margin: 20px 0px 20px 0px;
+}
+/* CEP */
+.cep{
+    position: relative;
+}
+.cep-text p{
+    width: 291px;
+    height: 20px;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 19.5px;
+    margin: 20px 0px 19.5px 0px
+}
+.pesquisa-cep{
+    display: flex;
+    flex-direction: row;
+}
+.busca-cep{
+    padding-right:12px;
+}
+.busca-cep input{
+    padding: 11px 14px;
+    border-radius: 20px;
+    width: 114px;
+    box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.1);
+    text-transform: uppercase;
+    padding-left: 12px;
+    outline: none;
+}
+.bnt-cep button{
+    background: #1E262E;
+    border-radius: 40px;
+    text-transform:uppercase;
+    cursor: pointer;
+    color:#fff;
+    padding: 12px 56px;
+    outline: none;
+}
+.bnt-cep button:hover{
+   color:#00C800;
+   text-transform: uppercase;
+}
+
+/* taxa de frete */
+.taxa-frete{
+    margin-top: 8px;
+    width: 157px;
+    height: 82px;
+}
+.taxa-frete p {
+    font-size: 12px;
+}
+.total-frete{
+    display: flex;
+    flex-direction: row;
+}
+.taxa-frete .total-frete{
+    margin-top: 20px;
+}
+.taxa-frete .total-frete h3{
+    font-size: 12px;
+    color:#00C800;
+}
+/* bnt-compra */
+.bnt-compra{
+    margin-top: 20px;
+    margin-top: 33px;
+}
+.bnt-compra button{
+    width: 195px;
+    height: 38px;
+    border-radius: 40px;
+    background: linear-gradient(90deg, #00C800 0%, #5DEA5D 100%);
+    color: #FFF;
+    text-transform: uppercase;
+    outline: none;
+    
+}
+/* Descrição do pneu */
+aside{
+    max-width: 1160px;
+    margin: 0px auto;
+}
+.nab-bar-description .bnt-list{
+    background:#F2F2F2;
+    width: 100%;
+    border-radius:20px;
+    margin-bottom: 20px;
+}
+.bnt-list ul {
+    height: 39px;
+    position: relative;
+    display: grid;
+    grid-template-columns: repeat(3, 300px);
+}
+.bnt-list ul li{
+    list-style:none;
+}
+.bnt-list ul li button{
+    text-transform: uppercase;
+    width: 100%;
+    height: 100%;
+    cursor: pointer;
+    color: #A5A5A5;
+    border-radius: 20px;
+    outline: none;
+}
+.bnt-list ul li button:hover{
+    background:  #00C800;
+    color: #FFF;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+/* container-fixa de avaliações */
+.container-fixa{
+    background:#F2F2F2;
+    width: 100%;
+    height:561px;
+    border-radius:70px 0px;;
+    margin-bottom: 59px;
+}
+/* produtos destaques */
+.titulo-destaque{
+    height: 30px;
+    width:100%;
+    text-transform:uppercase;
+    background:#252825;
+    color: #fff;
+    text-align: center;
+    font-size: 18px;
+}
+.lista-produtos-dtq{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    column-gap: 15px;
+    margin: 17px 130px 60px 130px;
+    align-items: center;
+}
+.card-item{
+    position: relative;
+    width:280px;
+    height: 410px;
+}
+.card-item .img-item img{
+    position: absolute;
+    width:250.7px;
+    height: 250.7px;
+}
+.card-item .img-item .badge img{
+    position: absolute;
+    width: 83.86px;
+    height: 30.26px;
+    margin-top:214.59px;
+    margin-left: 155.21px;
+    
+}
+.card-item .nome-pdt {
+    position: absolute;
+    width: 250px;
+    height: 37px;
+    text-align: center;
+    margin-top: 279px;
+    margin-left: 15px;
+    font-weight: 700;
+    font-size: 15px;
+}
+.card-item .preco-item{
+    position: absolute;
+    margin-top: 320.85px;
+    margin-left:15px;
+    width:249.53px;
+    font-style: italic;
+    text-align: center;
+}
+.card-item .bnt-item{
+    position: absolute;
+    margin-top: 360px;
+    margin-left: 24px;
+}
+.card-item .bnt-item button{
+    background:#00C800;
+    width: 232px;
+    height: 35px;
+    border-radius:40px;
+    text-transform:uppercase;
+    font-weight:700;
+    color:#fff;
+    outline: none;
+}
+.card-item .bnt-item button:hover{
+    background:#5DEB5D;
+    
+}
+.card-item:hover{
+    box-shadow: 0px 30px 40px -20px rgba(105, 105, 114, 0.3);
+    border-radius: 5px;
+    background:#F2F2F2;
+    transition: 100ms;
+}
+
+/* footer */
+footer{
+    margin-top: auto;
+}
+.king-pneus-bio{
+    position: relative;
+    background:#F2F2F2;
+    width: 100%;
+    height: 176px;
+}
+.container-footer{
+    position: absolute;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    column-gap: 10px;
+    margin: 38px 130px 54px 130px;
+    width: 1131px;
+    
+}
+.king-pneus-bio h1{
+    margin: 0%;
+    font-size: 12px;
+    line-height: 15.74px;
+    font-weight: 700;
+    font-style: normal;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    margin-bottom: 4px;
+}
+.king-pneus-bio .container-footer ul li{
+    list-style: none;
+    line-height: 10px;
+}
+.king-pneus-bio .container-footer ul li a{
+    line-height: 131.19%;
+    letter-spacing: 0.12em;
+    font-weight: 500;
+}
+.pagamentos .opcao-01 ul li{
+    margin-left: 8px;
+    display: inline;
+   
+}
+.pagamentos .opcao-02{
+    margin-top: 8px;
+}
+.pagamentos .opcao-02 ul li{
+    display: inline;
+    margin-left: 8px;
+}
+/* rodapé */
+.rodape{
+    position: relative;
+    width: 100%;
+    background:#1E262E;
+    height: 154px;
+}
+.rodape .redes-socais{
+    position: absolute;
+    margin-top:66.7px;
+    margin-left: 130px;
+}
+.rodape .redes-socais ul li {
+    list-style: none;
+    display: inline;
+    
+}
+.rodape .redes-socais ul li a{
+    margin-left: 24px;
+    font-size: 8px;
+    color: #fff;
+    text-align: center;
+    
+}
+.rodape .redes-socais ul li img{
+    margin-right: 7px;
+    
+}
+.logo-rodape{
+    position: absolute;
+    left: calc(50% - 159.2px/2 - 0.4px);
+    margin-top:27px;
+
+}
+.rodape .direitos{
+    position: absolute;
+    left: calc(50% - 254px/2);
+    margin-top:119px;
+    width: 254px;
+}
+.rodape .direitos p{
+    color: #FFF;
+    font-style: normal;
+    font-size: 8px;
+    font-weight: 500;
+    letter-spacing: 1px
+}
+/* list-product */
+
+.barra-busca{
+    width: 1180px;
+    margin: 0 auto;
+    height: 44px;
+    margin-bottom: 14px;
+}
+
+.elementos-barra{
+    position: relative;
+    display: flex;
+}
+.elementos-barra .nome-pneu{
+    margin-left: 33px;
+}
+.elementos-barra .nome-pneu p{
+    font-size: 28px;
+    line-height: 110%;
+    color: #252825;
+    width: 189px;
+    height: 31px;
+    font-weight: 600;
+}
+.busca-pneu{
+    margin-left: 318px;
+    align-items: baseline;
+    display: grid;
+    grid-template-columns:repeat(2,1fr);
+    gap: 14px;
+}
+.busca-pneu p{
+    margin-right: 28px;
+}
+
+.busca-pneu .button-down { 
+    display: flex;
+    align-items: baseline;
+}
+
+.banner-king-pneus{
+    width: 100%;
+    margin-bottom: 14px;
+}
+.banner-king-pneus img{
+    width: 100%;
+}
+.search-box-pneu{
+    display: flex;
+    width: 314px;
+    height: 29px;
+}
+.search-box-pneu input{
+    width: 270px;
+    border: solid 1px #00C800;
+    padding: 0px 10px;
+    border-radius: 25px 0 0 25px;
+    outline: none;
+}
+.search-box-pneu button{
+    width: 44px;
+    height: 29px;
+    background: #00C800;
+    border-radius: 0 25px 25px 0;
+    cursor: pointer;
+    outline: none;
+}
+.search-box-pneu button:hover{
+    background: #004200;
+
+}
+.search-box-pneu button img{
+    margin:0 auto;
+}
+.select-box-valor select{
+    border-radius: 20px;
+    box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.1);
+    width: 162px;
+    height: 38px;
+    left: 0px;
+    font-size: 16px;
+    padding: 11.5px;
+    appearance: none;
+    outline: none;
+
+}
+.select-box-valor select option{
+    font-size: 16px;
+    padding: 11.5px;
+}
+.select-box-valor img{
+    position: absolute;
+    margin-top: 20px;
+    margin-left: -20px;
+}
+/* cards-list-pneus-search */
+
+.cards-list{
+    position: relative;
+    width: 980px;
+    margin-left: 33px;
+
+}
+.cards-list .card-pneu-details{
+    background: #F2F2F2;
+    height: 200px;
+    display: grid;
+    grid-template-columns: 200px 1fr 1fr;
+    border-radius: 5px;
+
+}
+.card-pneu-details:hover{
+    border: 1px solid #5DEB5D;
+    box-sizing: border-box;
+    box-shadow: 0px 30px 40px -20px rgba(105, 105, 114, 0.3);
+    border-radius: 5px;
+
+}
+/* imagem pneu */
+.card-pneu-details .card-img{
+    position: relative;
+}
+.card-img img{
+    position: absolute;
+    height: 100%;
+}
+.card-badge img{
+    position: absolute;
+    height: 15%;
+    margin-top: 75%;
+    margin-left: 60%;
+}
+/*  card detalhes*/
+.card-text{
+    position: relative;
+}
+.card-text .card-nome-pneu{
+    margin-top: 26px;
+    font-weight: 700;
+    margin-bottom: 17px;
+}
+.card-text .card-avaliacao{
+    text-transform: uppercase;
+    display: flex;
+    margin-bottom: 17px;
+}
+
+.card-avl{
+    display: grid;
+    grid-template-columns: 26px 54px 120px;
+    column-gap: 7px;
+    align-items: baseline;
+    
+}
+.card-avl .pontuacao{
+    color:#F6A832;
+    font-size: 12px;
+
+}
+.card-avl .qnt-avl{
+    color:#A5A5A5;
+    font-weight:500;
+    font-size: 12px;
+}
+.card-categoria-pneu{
+    font-size: 12px;
+    display: flex;
+    color:#A5A5A5;
+    align-items: center;
+}
+.card-categoria-pneu p{
+    letter-spacing: 0.2mm;
+    margin-left: 3px;
+}
+.card-preco-pnu .preco-boleto p{
+    color:#00C800;
+    font-size: 12px;
+    font-weight:700;
+    line-height:13.3px;
+    margin-bottom: 12px;
+}
+.card-preco-pnu .card-parcelamento{
+    width:151px;
+    height:31px;
+    font-weight: 500;
+    font-size:10px;
+    font-style:normal;
+}
+/* card-marca/btn */
+.marca-bnt{
+    margin-top:48px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto
+
+}
+.marca-bnt .card-img-marca img{
+    margin-bottom: 39.89px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+.marca-bnt .button-compra button{
+    width: 280px;
+    height:38px;
+    border-radius:40px;
+    padding:12px 56px 12px 56px;
+    background:linear-gradient(90deg, #00C800 0%, #5DEA5D 100%);
+    font-weight:700;
+    color:#fff;
+    font-size: 15px;
+    text-transform: uppercase;
+    outline: none;
+    
+}
+.button-compra button:hover{
+    box-shadow: 0px 0px 20px rgba(93, 235, 93, 0.6);
+}
+
+
