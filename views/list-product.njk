@@ -1,0 +1,106 @@
+{% extends "layout.njk"%}
+
+{% block content %}
+
+        <div class="element-search">
+            <ul>
+                <li><a href="#"></a><img class="home" src="/assets/home.png" alt="home"></a></li>
+                <li><a href="#" class="passeio">Passeio</a></li>
+                <li><img  class="indicador" src="/assets/indicador-páginas.png" alt="indicador"></li>
+            </ul>
+            
+        </div>
+        
+        <div class="banner-king-pneus">
+            <img src="/assets/banner-kingpneus.png" alt="banner kingpneus">
+        </div>
+        <main>
+            <div class="barra-busca">
+                <div class="elementos-barra">
+                    <div class="nome-pneu">
+                        <p>PNEU 225/70</p>
+                    </div>
+
+                    <div class="busca-pneu">
+                        <div class="button-down">
+                            <div>
+                                <p>Ordenar por:</p> 
+                            </div>
+                            <div class="select-box-valor">
+                                    <select name="" id="">
+                                        <option value="">Valor maior</option>
+                                        <option value="">Valor menor</option>
+                                    </select>
+                                    <img src="/assets/arrow-down.png" alt="arrow-down">
+                                </div>
+                        </div>
+                        <div class="search-box-pneu">
+                            <input type="text" placeholder="Pesquisa">
+                            <div class="search-pneu">
+                            <button class="search-pneu"><img src="/assets/Vector.png" alt=""></button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <section>
+                <div class="cards-list">
+                    <div class="card-pneu-details">
+                        <div class="card-img">
+                            <img src="/assets/pneu_1.png" alt="pneu">
+                            <div class="card-badge">
+                                <img src="/assets/king-badge.png" alt="badge">
+                            </div>
+                        </div>
+                        <div class="card-text">
+                            <div class="card-nome-pneu">
+                                <p>PNEU SPORT PLUS 2 225/70 R15 84W XBRI</p>
+                            </div>
+                            <div class="card-avaliacao">
+                                <div class="card-avl">
+                                    <div class="pontuacao">
+                                        <p>4.0</p>
+                                    </div>
+                                    <div class="estrelas">
+                                        <img src="/assets/avaliacoes.png" alt="estrelas">
+                                    </div>
+                                    <div class="qnt-avl">
+                                        <p>0 AVALIAÇÕES</p>
+                                    </div>
+                                </div>
+                                <div class="card-categoria-pneu">
+                                    <img src="/assets/passeio.png" alt="categoria">
+                                    <p>carro</p>
+                                    <p>/</p>
+                                    <p>passeio</p>
+                                </div>
+                            </div>
+                            <div class="card-preco-pnu">
+                                <div class="preco-boleto">
+                                    <h1>R$190,00</h1>
+                                    <p>Á vista no boleto</p>
+                                </div>
+                                <div class="card-parcelamento">
+                                    <p>ou em até 4x de R$48,83
+                                    no cartão de crédito*</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="marca-bnt">
+                            <div class="card-img-marca">
+                                <img src="/assets/marca-pneu.png" alt="marca-pneu">
+                            </div>
+                            <div class="button-compra">
+                                <button>comprar</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+
+
+        </main>
+
+{% endblock %}

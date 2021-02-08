@@ -1,0 +1,222 @@
+{% extends "layout.njk"%}
+
+{% block content %}
+        <div class="element-search">
+            <ul>
+                <li><a href="#"></a><img class="home" src="/assets/home.png" alt="home"></a></li>
+                <li><a href="#" class="passeio">Passeio</a></li>
+                <li><img  class="indicador" src="/assets/indicador-páginas.png" alt="indicador"></li>
+            </ul>
+            
+        </div>
+    
+        <main>
+            <div class="container">
+                <div class="image-product">
+                    <img src="/assets/pneu_1.png" alt="">
+                    <img class="badge" src="/assets/king-badge.png" alt="">
+                </div>
+                <div class="details-product">
+                    <div class="banner-details">
+                        <div class="marca-pneu">
+                            <div class="nome-marca">
+                                <img src="/assets/marca-pneu.png" alt="">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="nome-pneu">
+                        <h1>PNEU SPORT PLUS 2 225/70 R15 84W XBRI</h1>
+                    </div>
+                    <div class="preco-pneu">
+                        <div class="text">
+                            <p>Quantidade:</p>
+                        </div>
+                        <div class="dropdown-option">
+                            <div class="option">
+                                <select name="" id="">
+                                    <option value="">1</option>
+                                    <option value="">2</option>
+                                    <option value="">3</option>
+                                    <option value="">4</option>
+                                </select>
+                                <img src="/assets/arrow-down.png" alt="arrow-down">
+                            </div>
+                            <div class="valor-pneu">
+                                <h2>R$:0,00</h2>
+                            </div>
+                            <div class="form-pag">
+                                <p>À vista no boleto</p>
+                            </div>
+                        </div>
+                        {# parcelamento #}
+                        <div class="parcelamento">
+                            <div class="qnt-parcela">
+                                <p>Parcele em até:</p>
+                            </div>
+                            <div class="select-box-parcela">
+                                <select name="" id="">
+                                    <option  selected disabled>4x de R$ 00,00 no cartão</option>
+                                    <option value="">3x de R$ 00,00 no cartão</option>
+                                    <option value="">2x de R$ 00,00 no cartão</option>
+                                    <option value="">1x de R$ 00,00 no cartão</option>
+                                </select>
+                                 <img src="/assets/arrow-down.png" alt="arrow-down">
+                            </div>
+
+                            <div class="taxa-juros">
+                                <p>Taxa do cartão de crédito: 2,80%
+                                1,3% de juros ao mês a partir da segunda parcela.</p>
+                            </div>
+                        </div>
+                    </div>
+                    {# CEP #}
+                    <div class="cep">
+                        <div class="cep-text">
+                            <p> Digite seu CEP para calcular o frete: </p>
+                        </div>
+                            <div class="pesquisa-cep">
+                                <div class="busca-cep">
+                                    <input type="text" placeholder="Digite seu CEP">
+                                </div>
+                                <div class="bnt-cep">
+                                    <button>calcular</button>
+                                </div>
+                            </div>
+                        {# taxa frete #}
+                        <div class="taxa-frete">
+                            <div class="frete">
+                                <p> Frete: R$ 00,00 para ‘CEP’ </p>
+                            </div>
+                            <div class="prazo">
+                                <p> Prazo: 0 dias úteis </p>
+                            </div>
+                            <div class="tipo">
+                                <p> Tipo: Transportadora </p>
+                            </div>
+                            <div class="total-frete">
+                                <p> Total: <h3> R$ 00,00 </h3> </p>
+                            </div>
+                        </div>
+                    </div>
+                    {# button compra #}
+                        <div class="bnt-compra">
+                                <button>Comprar</button>
+                        </div>
+                </div>
+            </div>
+
+        </main>
+        <aside>
+            <div class="nab-bar-description">
+                <div class="bnt-list">
+                    <ul>
+                        <li><button>Detalhes técnicos</button></li>
+                        <li><button>Avaliações</button></li>
+                        <li><button>Mais informações</button></li>
+                    </ul>
+                </div> 
+            </div>
+            <div class="container-fixa">
+                <div class="container-detalhes">
+
+                </div>
+                <div class="container-avaliacoes">
+
+                </div>
+                <div class="container-informacoes">
+
+                </div>
+            </div>
+
+        </aside>
+        {# produtos destaques #}
+        <section>
+            <div class="proodutos-destaques">
+                <div class="titulo-destaque">
+                    <h1>Nossos produtos destaques</h1>
+                </div>
+                <div class="lista-produtos-dtq">
+                    <div class="card-item">
+                        <div class="img-item">
+                            <img src="/assets/pneu_1.png" alt="pneu">
+                            <div class="badge">
+                                <img src="/assets/king-badge.png" alt="badge">
+                            </div>
+                            
+                        </div>
+                        <div class="nome-pdt">
+                            <p>PNEU
+                            XBRI SPORT+ 2 225/70 ARO 15</p>
+                        </div>
+                        <div class="preco-item">
+                            <h2>R$399,00</h2>
+                        </div>
+                        <div class="bnt-item">
+                            <button> ver detalhes </button>
+                        </div>
+                    </div>
+
+                    <div class="card-item">
+                        <div class="img-item">
+                            <img src="/assets/pneu_1.png" alt="pneu">
+                            <div class="badge">
+                                <img src="/assets/king-badge.png" alt="badge">
+                            </div>
+                            
+                        </div>
+                        <div class="nome-pdt">
+                            <p>PNEU
+                            XBRI SPORT+ 2 225/70 ARO 15</p>
+                        </div>
+                        <div class="preco-item">
+                            <h2>R$399,00</h2>
+                        </div>
+                        <div class="bnt-item">
+                            <button> ver detalhes </button>
+                        </div>
+                    </div>
+
+                    <div class="card-item">
+                        <div class="img-item">
+                            <img src="/assets/pneu_1.png" alt="pneu">
+                            <div class="badge">
+                                <img src="/assets/king-badge.png" alt="badge">
+                            </div>
+                            
+                        </div>
+                        <div class="nome-pdt">
+                            <p>PNEU
+                            XBRI SPORT+ 2 225/70 ARO 15</p>
+                        </div>
+                        <div class="preco-item">
+                            <h2>R$399,00</h2>
+                        </div>
+                        <div class="bnt-item">
+                            <button> ver detalhes </button>
+                        </div>
+                    </div>
+
+                    <div class="card-item">
+                        <div class="img-item">
+                            <img src="/assets/pneu_1.png" alt="pneu">
+                            <div class="badge">
+                                <img src="/assets/king-badge.png" alt="badge">
+                            </div>
+                            
+                        </div>
+                        <div class="nome-pdt">
+                            <p>PNEU
+                            XBRI SPORT+ 2 225/70 ARO 15</p>
+                        </div>
+                        <div class="preco-item">
+                            <h2>R$399,00</h2>
+                        </div>
+                        <div class="bnt-item">
+                            <button> ver detalhes </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+         
+ {% endblock %}      
